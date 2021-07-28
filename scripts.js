@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
   $("#slideshow > div:gt(0)").hide();
 
   setInterval(function () {
-    $("#slideshow > div:first")
+    $("#slideshow > img:first")
       .fadeOut(1000)
       .next()
       .fadeIn(1000)

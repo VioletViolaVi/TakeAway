@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <!-- bootstrap css -->
@@ -13,43 +20,37 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>TakeAway</title>
+    <title>Peppered Pearls</title>
   </head>
   <body>
     <main>
       <header>
-        <h1>Take Away</h1>
+        <h1>Peppered Pearls</h1>
       </header>
 
       <section>
+        <!-- https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
         <div id="slideshow">
-          <div>
-            <img
-              src="images/burgerChips.jpg"
-              alt="Burger and chips with ketchup."
-            />
-          </div>
-          <div>
-            <img src="images/pizza.jpg" alt="Pizza slices." />
-          </div>
-          <div>
-            <img
-              src="images/kebabs.jpg"
-              alt="Kebabs with chips, tomatoes, onions, lemon, sauce and bread."
-            />
-          </div>
+          <img
+            src="images/burgerChips.jpg"
+            alt="Burger and chips with ketchup."
+          />
+          <img src="images/pizza.jpg" alt="Pizza slices." />
+          <img
+            src="images/kebabs.jpg"
+            alt="Kebabs with chips, tomatoes, onions, lemon, sauce and bread."
+          />
         </div>
       </section>
-
-      <!-- jQuery CDN link-->
-      <script
-        src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"
-      ></script>
     </main>
   </body>
 
+  <!-- jQuery CDN link-->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
   <!-- my js -->
   <script src="scripts.js"></script>
 </html>
