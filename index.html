@@ -17,27 +17,85 @@
   </head>
   <body>
     <!-- bootstrap nav -->
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="p-4">
-        <h5 class="h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
-      </div>
-    </div>
-    <nav class="navbar navbar-dark">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="fas fa-bars"></i>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
+
+    <!-- bootstrap carousel -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/burgerChips.jpg"
+            class="d-block w-100"
+            alt="Burger and chips with ketchup."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/pizza.jpg"
+            class="d-block w-100"
+            alt="Pizza slices."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/kebabs.jpg"
+            class="d-block w-100"
+            alt="Kebabs with chips, tomatos, onions, lemon, sauce and bread "
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </body>
 
   <!-- fontawesome link -->
