@@ -4,11 +4,10 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
   font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
-figcaption,
-figure,
 footer,
 header,
 nav,
@@ -16,35 +15,45 @@ section {
   display: block;
 }
 body {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /******************************************************************************** MAIN HEADING */
+header {
+  margin-left: 1rem;
+}
 h1 {
-  padding-top: 1rem;
-  text-align: center;
-  color: black;
-  font-size: 3rem !important;
-}
-
-/******************************************************************************** IMAGES */
-img {
-  width: 14rem;
-  height: 14rem;
-}
-
-/******************************************************************************** CAROUSEL */
-/* https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ */
-#slideshow {
-  margin: 50px auto;
-  position: relative;
-  width: 240px;
-}
-
-#slideshow > img {
+  color: white;
+  font-size: 4rem;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/******************************************************************************** MAIN IMAGE & TEXT */
+#mainImg figure {
+  top: 0;
+  margin: 0;
+}
+#mainImg img {
+  width: 100%;
+  height: 45rem;
+}
+
+/******************************************************************************** ATTRACTIONS */
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+#attractionImg ul {
+  list-style: none;
+}
+#attractionImg figure {
+  display: inline;
+}
+#attractionImg img {
+  width: 26%;
+  height: 17rem;
+  border-radius: 50%;
 }
